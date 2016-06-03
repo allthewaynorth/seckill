@@ -7,7 +7,7 @@ import org.seckill.entity.SuccessKilled;
  * Created by lenovo on 2016/6/2.
  */
 public interface SuccessKilledDao {
-    //插入购买明细,可过滤重复,插入的行数
+    //插入购买明细,可过滤重复,返回的int为插入的行数
     int insertSuccessKilled(@Param("seckillId") long seckillId, @Param("userPhone") long userPhone);
 
     //根据id查询SuccessKilled并携带秒杀产品对象实体
